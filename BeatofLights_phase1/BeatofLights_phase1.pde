@@ -26,7 +26,7 @@ int ledPin =  12;    // LED connected to digital pin 12
 int ledPin2 =  8;    // LED connected to digital pin 1
 int ledPin3 =  2;    // LED connected to digital pin 0
 
-float kickSize, snareSize, hatSize;
+float kickSize, snareSize, hatSize, bassSize, trebleSize, bassdropSize;
 
 void setup() {
   size(512, 200, P3D);
@@ -65,10 +65,21 @@ void draw() {
       arduino.digitalWrite(ledPin, Arduino.HIGH);   // set the LED on
       kickSize = 32;
   }
-  if(beat.isSnare()) {
+  if(beat.isBass()) {
       arduino.digitalWrite(ledPin2, Arduino.HIGH);   // set the LED on
-      snareSize = 32;
+      bassSize = 40;
   }
+  
+  if(beat.isTreble()) {
+      arduino.digitalWrite(ledPin2, Arduino.HIGH);   // set the LED on
+      trebleSize = 15;
+  }
+  
+  if(beat.isBassDrop()) {
+      arduino.digitalWrite(ledPin2, Arduino.HIGH);   // set the LED on
+      bassdropSize =100;
+  }
+ 
   if(beat.isHat()) {
       arduino.digitalWrite(ledPin3, Arduino.HIGH);   // set the LED on
       hatSize = 32;
@@ -83,6 +94,9 @@ void draw() {
   textSize(hatSize);
   text("HAT", 3*width/4, height/2);
   kickSize = constrain(kickSize * 0.95, 16, 32);
+  bassSize = constrain(bassSize * 2.95, 20, 40);
+  trebleSize = constrain(trebleSize * 3, 12, 20);
+  bassdropSize = constrain(kickSize * 50, 70, 100);
   snareSize = constrain(snareSize * 0.95, 16, 32);
   hatSize = constrain(hatSize * 0.95, 16, 32);
 }
