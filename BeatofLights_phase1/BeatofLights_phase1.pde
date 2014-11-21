@@ -93,6 +93,12 @@ void draw() {
   text("SNARE", width/2, height/2);
   textSize(hatSize);
   text("HAT", 3*width/4, height/2);
+  textSize(bassSize);
+  text("BASS", 3*width/4, height/2);
+  textSize(trebleSize);
+  text("Treble", 3*width/4, height/2);
+  textSize(bassdropSize);
+  text("BASSDROP", 3*width/4, height/2);
   kickSize = constrain(kickSize * 0.95, 16, 32);
   bassSize = constrain(bassSize * 2.95, 20, 40);
   trebleSize = constrain(trebleSize * 3, 12, 20);
