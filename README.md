@@ -1,18 +1,18 @@
 Beat-of-Lights
 ==============
 
-This is the repository for our Music Visualizer project for CSCI 3308.
+This is the repository for our Music Visualizer project for CSCI 3308 Software Tools & Method
 
 ###First Protoype:
 
-We initially began with a goal to create an LED Visualizer using an Arduino board. Through our Processing and Arduino IDEs we were able to create a functioning visualizer for.mp3 files. 
-Resources used: 
+We initially began with a goal to create an LED Visualizer using an Arduino board. Through our Processing and Arduino IDEs we were able to create a functioning visualizer for.mp3 files while connected via USB cord to the computer.
+Intital Resources used: 
 Arduino IDE
 Processing 2 IDE
-HTML5 Visualizer
+
 
 Problems that came up:
-We collectively were trying to create a visualizer that took streamable music (i.e. Spotify, Pandora, etc.), but all possible methods were found to be very difficult since most of these music engines do not have web APIs that allow access to their data.
+We collectively were trying to create a visualizer that took streamable music (i.e. Spotify, Pandora, etc.), but all possible methods were found to be very difficult since most of these music engines do not have web APIs that allow access to their data. This changed the direction our group was going to work.
 
 ###Second Protoype:
 
@@ -22,7 +22,7 @@ Possible Improvements:
 We could implement a way to make full playlists readable on this visualizer to allow longer visualization time.
 Implementing a way for this code to access the built-in microphone and allow visualization that way.
 
-Prototype 3 - Under Development
+###Third Protoype - Under Development
 
 With this prototype we will use all we have learned thus far and attempt to create a visualizer that takes data from an audio API or the microphone directly.
 Once successful, we will implement visualizations for the given audio data.
