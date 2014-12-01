@@ -3,15 +3,18 @@ Beat-of-Lights
 
 This is the repository for our Music Visualizer project for CSCI 3308.
 
+###First Protoype:
+
 We initially began with a goal to create an LED Visualizer using an Arduino board. Through our Processing and Arduino IDEs we were able to create a functioning visualizer for.mp3 files. 
 Resources used: 
 Arduino IDE
 Processing 2 IDE
+HTML5 Visualizer
 
-Problems that Came Up:
+Problems that came up:
 We collectively were trying to create a visualizer that took streamable music (i.e. Spotify, Pandora, etc.), but all possible methods were found to be very difficult since most of these music engines do not have web APIs that allow access to their data.
 
-Second Protoype:
+###Second Protoype:
 
 As another option, we created a simple  HTML5 Visualizer that uses dynamic bars to visualize the range of frequencies in a .mp3 song. 
 
