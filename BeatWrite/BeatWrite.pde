@@ -32,9 +32,9 @@ void setup() {
   size(512, 200, P3D);
   
   minim = new Minim(this);
-  arduino = new Arduino(this, Arduino.list()[1], 57600);
+  arduino = new Arduino(this, Arduino.list()[6], 57600);
   
-  song = minim.loadFile("freebird.mp3", 2048);
+  song = minim.loadFile("Everything.mp3", 2048);
   song.play();
   // a beat detection object that is FREQ_ENERGY mode that 
   // expects buffers the length of song's buffer size
