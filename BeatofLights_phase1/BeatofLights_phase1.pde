@@ -71,22 +71,22 @@ void draw() {
   }
   
   if(beat.isTreble()) {
-      arduino.digitalWrite(ledPin2, Arduino.HIGH);   // set the LED on
+      arduino.digitalWrite(ledPin2, Arduino.HIGH);   
       trebleSize = 15;
   }
   
   if(beat.isBassDrop()) {
-      arduino.digitalWrite(ledPin2, Arduino.HIGH);   // set the LED on
+      arduino.digitalWrite(ledPin2, Arduino.HIGH);   
       bassdropSize =100;
   }
  
   if(beat.isHat()) {
-      arduino.digitalWrite(ledPin3, Arduino.HIGH);   // set the LED on
+      arduino.digitalWrite(ledPin3, Arduino.HIGH);  
       hatSize = 32;
   }
-  arduino.digitalWrite(ledPin, Arduino.LOW);    // set the LED off
-  arduino.digitalWrite(ledPin2, Arduino.LOW);    // set the LED off
-  arduino.digitalWrite(ledPin3, Arduino.LOW);    // set the LED off
+  arduino.digitalWrite(ledPin, Arduino.LOW);    
+  arduino.digitalWrite(ledPin2, Arduino.LOW);    
+  arduino.digitalWrite(ledPin3, Arduino.LOW);    
   textSize(kickSize);
   text("KICK", width/4, height/2);
   textSize(snareSize);
