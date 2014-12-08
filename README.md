@@ -24,6 +24,8 @@ We collectively were trying to create a visualizer that took streamable music (i
 
 ##Second Protoype:
 
+![screenshot](http://i.imgur.com/BStrqjU.png?1)
+
 An HTML5 Visualizer was created to more directly parse data into frequencies and create something more appealing to watch. 
 
 ###How to:
