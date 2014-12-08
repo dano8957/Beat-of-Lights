@@ -41,11 +41,6 @@ Testing was done through Geany to deal with minor errors in the code and find ru
 Much like our first prototype, we found that there is no easy way to parse streaming audio data. Most APIs do not have a simple way of parsing audio data and encoding it for visualization. 
 
 
-###Possible Improvements:
-
--We could implement a way to make full playlists readable on this visualizer to allow longer visualization time.
--Implementing a way for this code to access the built-in microphone and allow visualization that way.
-
 ##Third Protoype - LED Matrix Visualizer
 
 ![screenshot](http://i.imgur.com/PID1vgJ.png?1)
