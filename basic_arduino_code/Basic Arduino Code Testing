@@ -1,1 +1,2 @@
-The code within this folder was used as an initial test case to introduce us to basic integration methods. We integrated the basic-arduino_code.ino to have an LED turn on and off with a set delay between. This gave us insight into how to implement our first music visualizer prototype.  
+The code within this folder was used as an initial test case to introduce us to basic integration methods. 
+We integrated the basic-arduino_code.ino to have an LED turn on and off with a set delay between. This gave us insight into how to implement our first music visualizer prototype.  
