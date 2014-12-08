@@ -4,8 +4,11 @@ Project Name: Beat-of-Lights
 This is the repository for our Music Visualizer project for CSCI 3308 Software Tools and Methods
 
 Callan Fisher
+
 Daniel Nolan
+
 Chris Fanning
+
 Zach Vencius
 
 ##First Protoype:
