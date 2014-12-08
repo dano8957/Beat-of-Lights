@@ -1,0 +1,20 @@
+This sketch demonstrates how to use the Beat\+Detect object in F\+R\+E\+Q\+\_\+\+E\+N\+E\+R\+G\+Y mode.~\newline
+ You can use {\ttfamily is\+Kick}, {\ttfamily is\+Snare}, is\+Hat, {\ttfamily is\+Range}, and {\ttfamily is\+Onset(int)} to track whatever kind of beats you are looking to track, they will report true or false based on the state of the analysis. To \char`\"{}tick\char`\"{} the analysis you must call {\ttfamily detect} with successive buffers of audio. You can do this inside of {\ttfamily draw}, but you are likely to miss some audio buffers if you do this. The sketch implements an {\ttfamily \doxyref{Audio\+Listener}{p.}{class_audio_listener}} called {\ttfamily Beat\+Listener} so that it can call {\ttfamily detect} on every buffer of audio processed by the system without repeating a buffer or missing one. 
+
+This sketch plays an entire song so it may be a little slow to load. 
+\begin{DoxyParams}{Parameters}
+{\em Minim} & Set the minimum value \\
+\hline
+{\em song} & Allows user to choose song \\
+\hline
+{\em beat} & Set the beat frequency \\
+\hline
+{\em arduino} & Choose Arudino port number and freqency \\
+\hline
+{\em Iskick} & Looks for Kicks \\
+\hline
+{\em Is\+Snare} & Looks for Snares \\
+\hline
+{\em Is\+Hat} & Looks for Hat \\
+\hline
+\end{DoxyParams}

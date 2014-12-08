@@ -10,6 +10,14 @@
   * <p>
   * This sketch plays an entire song so it may be a little slow to load.
   */
+///@mainpage
+///@param Minim Set the minimum value 
+///@param song Allows user to choose song
+///@param beat Set the beat frequency
+///@param arduino Choose Arudino port number and freqency
+///@param Iskick Looks for Kicks
+///@param IsSnare Looks for Snares
+///@param IsHat Looks for Hat
 
 import processing.serial.*;
 import ddf.minim.*;
@@ -30,11 +38,11 @@ float kickSize, snareSize, hatSize;
 
 void setup() {
   size(512, 200, P3D);
-  
+     
   minim = new Minim(this);
   arduino = new Arduino(this, Arduino.list()[6], 57600);
   
-  song = minim.loadFile("Everything.mp3", 2048);
+  song = minim.loadFile("Dani.mp3", 2048);
   song.play();
   // a beat detection object that is FREQ_ENERGY mode that 
   // expects buffers the length of song's buffer size
@@ -61,6 +69,7 @@ void setup() {
 void draw() {
   background(0);
   fill(255);
+  
   if(beat.isKick()) {
       arduino.digitalWrite(ledPin, Arduino.HIGH);   // set the LED on
       kickSize = 32;
