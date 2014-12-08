@@ -1,7 +1,7 @@
 Project Name: Beat-of-Lights
 ==============
 
-This is the repository for our Music Visualizer project for CSCI 3308 Software Methods and Tools
+This is the repository for our Music Visualizer project for CSCI 3308 Software Tools and Methods
 
 ##First Protoype:
 
@@ -48,5 +48,5 @@ In the last few weeks we decided to create a visualization method that used a mi
 
 ###Problems:
 
-Time constraints did not give us enough time to finish this. An initial test was done and recorded in a video within our PowerPoint presentation. We also did not purchase the correct microphone because the microphone had difficulty reading the data and parsing it into the LED Matrix. 
+Time constraints did not give us enough time to finish this. An initial test was done and recorded in a video within our PowerPoint presentation. We also did not purchase the correct microphone because the microphone had difficulty reading the data and parsing it into the LED Matrix.
 
