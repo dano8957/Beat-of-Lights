@@ -5,6 +5,8 @@ This is the repository for our Music Visualizer project for CSCI 3308 Software T
 
 ##First Protoype:
 
+![screenshot](http://i.imgur.com/sjF80ek.png?1)
+
 We initially began with a goal to create an LED Visualizer using an Arduino board. Through our Processing and Arduino IDEs we were able to create a functioning visualizer for.mp3 files while connected via USB cord to the computer.
 Intital Resources used: 
 Arduino IDE
