@@ -48,6 +48,8 @@ Much like our first prototype, we found that there is no easy way to parse strea
 
 ##Third Protoype - LED Matrix Visualizer
 
+![screenshot](http://i.imgur.com/DRPDnH1.png?1)
+
 In the last few weeks we decided to create a visualization method that used a microphone to create a visualization. Instead of parsing .mp3 files we implemented a code that would allow incoming sound to be parsed directly after the microphone detected sound. This would be integrated with an 8 x 8 LED Matrix to create a number of programmable visualizations like in previous prototypes.
 
 ###Problems:
