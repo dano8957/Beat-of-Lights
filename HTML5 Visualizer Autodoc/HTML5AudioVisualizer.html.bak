@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<style type="text/css">
+/**@title HTML5 Visualizer - Dynamic Bar Graph
+*@file HTML2Visualizer.html
+*@brief The HTML5 coding below is used to define the dimensions of the visualizer (play button to background size).
+*/
+div#mp3_player{ width:500px; height:230px; background:#000080; padding:5px; margin:50px auto; }
+div#mp3_player > div > audio{  width:500px; background:#000080; float:left;  }
+div#mp3_player > canvas{ width:500px; height:200px; background:#FFFFFF; float:left; }
+</style>
+<script>
+///This file was implemented using HTML5 Tutorial
+///http://www.developphp.com/view.php?tid=1348
+/// Create a new instance of an audio object and adjust some of its properties
+var audio = new Audio();
+audio.src = 'DaniCalifornia.mp3';
+audio.controls = true;
+audio.loop = true;
+audio.autoplay = true;
+// Establish all variables used in the analyser
+var canvas, ctx, source, context, analyser, fbc_array, bars, bar_x, bar_width, bar_height;
+// Initialize the MP3 player after the HTML data is loaded
+window.addEventListener("load", initMp3Player, false);
+/**@mainpage This main function takes an MP3 file and initializes the mp3 file in the subdirectory of this .html file.
+*@brief The audio playback is re-routed into the processing graph of the AudioContext.
+*@param context This defines the audiocontext  and gives a basis to encode audio data.
+*@param analyser This is the main variable that helps link the mp3 file to the HTML Visualizer.
+*/
+function initMp3Player(){
+	document.getElementById('audio_box').appendChild(audio);
+	context = new webkitAudioContext(); 
+	analyser = context.createAnalyser(); /// Create AnalyserNode
+	canvas = document.getElementById('analyser_render');
+	ctx = canvas.getContext('2d');
+	source = context.createMediaElementSource(audio); 
+	source.connect(analyser);
+	analyser.connect(context.destination);
+	frameLooper();
+}
+/**@brief frameLooper() animates any style of graphics you wish to the audio frequency
+*@param fbc_array Defines the range of frequency within each defined bar in the dynamic bar graph visualizer.
+*/
+function frameLooper(){
+	window.webkitRequestAnimationFrame(frameLooper);
+	fbc_array = new Uint8Array(analyser.frequencyBinCount);
+	analyser.getByteFrequencyData(fbc_array);
+	
+	ctx.clearRect(0, 0, canvas.width, canvas.height); /// Clear the canvas of remaining rectangles
+	ctx.fillStyle = '#FF0000'; /// Color of the bars
+	bars = 100;
+	for (var i = 0; i < bars; i++) {
+		bar_x = i * 4;
+		bar_width = 3.5;
+		bar_height = -(fbc_array[i]/2);///Base the height of the bars off of the audio frequency range limits.
+		/// Defined: fillRect( x, y, width, height )
+		ctx.fillRect(bar_x, canvas.height, bar_width, bar_height);
+	}
+}
+</script>
+</head>
+<body>
+<div id="mp3_player">
+  <div id="audio_box"></div>
+  <canvas id="analyser_render"></canvas>
+</div>
+</body>
+</html>
