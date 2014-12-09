@@ -2,6 +2,8 @@ Project Name: Beat-of-Lights
 ==============
 
 This is the repository for our Music Visualizer project for CSCI 3308 Software Tools and Methods
+##Doxygen:
+We used Doxygen to autodocument our project (This is for prototype 1).  The Doxygen output is contained in the HTML folder.  The HTML folder in contained in BeatWrite. There one opens the index.html file.  The entire Doxygen output is then rendered in the chosen web browser.
 
 ##First Protoype:
 
@@ -53,6 +55,5 @@ In the last few weeks we decided to create a visualization method that used a mi
 
 Time constraints did not give us enough time to finish this. An initial test was done and recorded in a video within our PowerPoint presentation. We also did not purchase the correct microphone because the microphone had difficulty reading the data and parsing it into the LED Matrix.
 
-##Doxygen:
-We used Doxygen to autodocument our project (This is for prototype 1).  The Doxygen output is contained in the HTML folder.  The HTML folder in contained in BeatWrite. There one opens the index.html file.  The entire Doxygen output is then rendered in the chosen web browser.
+
 
