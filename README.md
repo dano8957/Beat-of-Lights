@@ -47,7 +47,12 @@ Much like our first prototype, we found that there is no easy way to parse strea
 
 In the last few weeks we decided to create a visualization method that used a microphone to create a visualization. Instead of parsing .mp3 files we implemented a code that would allow incoming sound to be parsed directly after the microphone detected sound. This would be integrated with an 8 x 8 LED Matrix to create a number of programmable visualizations like in previous prototypes.
 
+
+
 ###Problems:
 
 Time constraints did not give us enough time to finish this. An initial test was done and recorded in a video within our PowerPoint presentation. We also did not purchase the correct microphone because the microphone had difficulty reading the data and parsing it into the LED Matrix.
+
+##Doxygen:
+We used Doxygen to autodocument our project (This is for prototype 1).  The Doxygen output is contained in the HTML folder.  There one opens the index.html file.  The entire Doxygen output is then rendered in the chosen web browser.
 
